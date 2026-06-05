@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+:root {
+  --background-color: whitesmoke;
+  --text-color: #131314;
+  --font-primary: "Inter", sans-serif;
+}
+
+html.dark {
+  --background-color: #131314;
+  --text-color: #f5f5f5;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font-primary);
+  margin: 0;
+  padding: 0;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
