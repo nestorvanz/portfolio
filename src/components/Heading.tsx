@@ -2,7 +2,7 @@ import styles from "./Heading.module.scss";
 
 interface Props {
   children: string;
-  level: "1" | "2";
+  level: "1" | "2" | "3";
 }
 
 export function Heading({ children, level }: Props) {
@@ -22,14 +22,25 @@ export function Heading({ children, level }: Props) {
         "text-2xl",
         "mt-4",
         "mb-4",
-        // "text-stone-400",
         "border-stone-400",
         "border-b",
         "pb-1",
         "border-solid",
       ].join(" ");
-      element = <h1 className={h2ClassName}>{children}</h1>;
+      element = <h2 className={h2ClassName}>{children}</h2>;
       break;
+
+    case "3":
+      let h3ClassName = [...baseClassName, "text-l", "text-stone-400"].join(
+        " ",
+      );
+      element = (
+        <h3 className={h3ClassName}>
+          <i>{children}</i>
+        </h3>
+      );
+      break;
+
     default:
       break;
   }

@@ -20,15 +20,13 @@ export function Main({ children }: Props) {
     };
   }, []);
 
-  // const className = [styles["main"], visible && styles["visible"]]
-  //   .filter(Boolean)
-  //   .join(" ");
-
   const className = [
     "box-border",
     "duration-500",
     "max-w-2xl",
     "pt-10",
+    "pl-4",
+    "pr-4",
     "mx-auto",
     "transition-opacity",
     "w-full",
