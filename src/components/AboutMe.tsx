@@ -5,7 +5,8 @@ import { View } from "./ui/View";
 
 export function AboutMe() {
   return (
-    <View>
+    <View name="About me">
+      {/* <Continue>Abount me</Continue> */}
       <Article heading="About Me" image="/img/me.png">
         <Section heading="Overview">
           <p>
@@ -38,7 +39,6 @@ export function AboutMe() {
           </p>
         </Section>
       </Article>
-      <Continue>AI</Continue>
     </View>
   );
 }

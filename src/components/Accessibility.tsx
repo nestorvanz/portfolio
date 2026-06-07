@@ -4,7 +4,7 @@ import { View } from "./ui/View";
 
 export function Accessibility() {
   return (
-    <View>
+    <View name="Accessibility">
       <Article heading="Accessibility" image="/img/ai.png">
         <Section heading="Overview">
           <p>

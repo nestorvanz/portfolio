@@ -1,28 +1,12 @@
 .view {
-  min-height: 100dvh;
   background-color: #131314;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* padding-inline: 1rem; */
-
-  transition: background-color 300ms ease;
   position: relative;
-}
 
-.view.hidden {
-  background-color: #181819;
+  &.full-height {
+    min-height: 100dvh;
+  }
 }
-
-/* .view:nth-of-type(2n) {
-  background-color: #181819;
-}
-
-.view .article-image::after {
-  background: linear-gradient(to top, #131314ff 30%, #13131400 100%);
-}
-
-.view:nth-of-type(2n) .article-image::after {
-  background: linear-gradient(to top, #181819ff 30%, #18181900 100%);
-} */

@@ -7,9 +7,9 @@ import { Continue } from "./ui/Continue";
 
 export function Start() {
   return (
-    <View>
+    <View height="full">
       <Heading level="1">Néstor Vanz</Heading>
-      <Paragraph>
+      <Paragraph align="center">
         <span className="profesional-title">
           <i>Software Engineer</i>
         </span>
@@ -18,7 +18,6 @@ export function Start() {
         <LinkedInIcon size={32} />
         <GitHubIcon size={32} />
       </div>
-      <Continue>Abount me</Continue>
     </View>
   );
 }

@@ -1,11 +1,12 @@
 import { Article } from "./Article";
 import { Heading } from "./Heading";
 import { Section } from "./Section";
+import { Continue } from "./ui/Continue";
 import { View } from "./ui/View";
 
 export function AI() {
   return (
-    <View>
+    <View name="AI">
       <Article heading="AI Implementations" image="/img/ai.png">
         <Section heading="Overview">
           <p>

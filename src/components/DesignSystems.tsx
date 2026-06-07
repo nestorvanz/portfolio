@@ -5,7 +5,7 @@ import { View } from "./ui/View";
 
 export function DesignSystems() {
   return (
-    <View>
+    <View name="Design Sytems">
       <Article heading="Design Sytems experience" image="/fb_ds.png">
         <Section heading="Overview">
           <p>

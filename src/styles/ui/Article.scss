@@ -1,0 +1,12 @@
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 2rem;
+  max-width: 40rem;
+  padding-block: 2rem;
+
+  .content {
+    padding-inline: 1rem;
+  }
+}
