@@ -21,16 +21,16 @@ export function Main({ children }: Props) {
   }, []);
 
   const className = [
-    "box-border",
-    "duration-500",
-    "max-w-2xl",
-    "pt-10",
-    "pl-4",
-    "pr-4",
-    "mx-auto",
-    "transition-opacity",
-    "w-full",
-    visible ? "opacity-100" : "opacity-0",
+    // "box-border",
+    // "duration-500",
+    // "max-w-2xl",
+    // "pt-10",
+    // "pl-4",
+    // "pr-4",
+    // "mx-auto",
+    // "transition-opacity",
+    // "w-full",
+    // visible ? "opacity-100" : "opacity-0",
   ].join(" ");
 
   return <main className={className}>{children}</main>;

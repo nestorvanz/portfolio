@@ -2,18 +2,15 @@ import { AboutMe } from "./AboutMe";
 import { Accessibility } from "./Accessibility";
 import { AI } from "./AI";
 import { DesignSystems } from "./DesignSystems";
+import { View } from "./ui/View";
 import { Heading } from "./Heading";
 import { Main } from "./Main";
+import { Start } from "./Start";
 
 export function Home() {
   return (
     <Main>
-      <div className="pb-1 mb-10">
-        <Heading level="1">Nestor Vanz</Heading>
-        <p className="text-stone-400 text-2xl">
-          <i>Software Engineer</i>
-        </p>
-      </div>
+      <Start />
       <AboutMe />
       <AI />
       <DesignSystems />

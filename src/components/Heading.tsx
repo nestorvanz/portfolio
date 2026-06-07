@@ -6,11 +6,13 @@ interface Props {
 }
 
 export function Heading({ children, level }: Props) {
-  const baseClassName = ["font-semibold"];
+  const baseClassName: string[] = [];
+  // const baseClassName = ["font-semibold"];
   let element;
   switch (level) {
     case "1":
-      let h1ClassName = [...baseClassName, "text-5xl", "mt-8", "mb-4"].join(
+      let h1ClassName = [...baseClassName].join(
+        // let h1ClassName = [...baseClassName, "text-5xl", "mt-8", "mb-4"].join(
         " ",
       );
       element = <h1 className={h1ClassName}>{children}</h1>;
@@ -22,8 +24,8 @@ export function Heading({ children, level }: Props) {
         "text-2xl",
         "mt-4",
         "mb-4",
-        "border-stone-400",
-        "border-b",
+        // "border-stone-400",
+        // "border-b",
         "pb-1",
         "border-solid",
       ].join(" ");
