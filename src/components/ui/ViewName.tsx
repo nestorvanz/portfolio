@@ -1,4 +1,5 @@
 import { ArrowsDownIcon } from "../../icons/ArrowsDownIcon";
+import { ArrowsUpIcon } from "../../icons/ArrowsUpIcon";
 
 interface Props {
   children: string;
@@ -6,14 +7,23 @@ interface Props {
 }
 
 export function ViewName({ children, visible }: Props) {
-  const className = ["view-name", visible && "visible"]
+  const classNameTop = ["view-name-top", visible && "visible"]
+    .filter(Boolean)
+    .join(" ");
+  const classNameBottom = ["view-name-bottom", visible && "visible"]
     .filter(Boolean)
     .join(" ");
 
   return (
-    <div className={className}>
-      <ArrowsDownIcon size={24} />
-      <span>{children}</span>
-    </div>
+    <>
+      <div className={classNameTop}>
+        <ArrowsDownIcon size={24} />
+        <span>{children}</span>
+      </div>
+      <div className={classNameBottom}>
+        <ArrowsUpIcon size={24} />
+        <span>{children}</span>
+      </div>
+    </>
   );
 }

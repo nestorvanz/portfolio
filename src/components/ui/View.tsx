@@ -20,14 +20,14 @@ export function View({ children, height = "auto", name }: Props) {
     const observer = new IntersectionObserver(
       (entries) => {
         for (const entry of entries) {
-          if (entry.intersectionRatio >= 0.5) {
+          if (entry.intersectionRatio >= 0.4) {
             requestAnimationFrame(() => setVisible(true));
           } else {
             setVisible(false);
           }
         }
       },
-      { threshold: [0, 0.5, 1] },
+      { threshold: [0, 0.4, 1] },
     );
     observer.observe(ref.current);
 

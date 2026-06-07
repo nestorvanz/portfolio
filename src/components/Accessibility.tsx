@@ -5,7 +5,7 @@ import { View } from "./ui/View";
 export function Accessibility() {
   return (
     <View name="Accessibility">
-      <Article heading="Accessibility" image="/img/ai.png">
+      <Article heading="Accessibility" image="/img/ax.png">
         <Section heading="Overview">
           <p>
             I've gone beyond coding with AI, but making customs implementation
