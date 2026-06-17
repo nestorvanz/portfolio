@@ -25,8 +25,8 @@ export async function onRequest({
     return ErrorResponse("Query param 'type' not valid", 400);
   }
 
-  const backendUrl = "https://main-backend-latest.onrender.com/health";
-  // "https://main-backend-latest.onrender.com/auth/refresh-token";
+  const backendUrl =
+    "https://main-backend-latest.onrender.com/auth/refresh-token";
   const response = await fetch(backendUrl, {
     method: "GET",
     headers: {
