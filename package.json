@@ -22,6 +22,7 @@
     "tailwindcss": "^4.3.0"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260617.1",
     "sass": "^1.100.0"
   }
 }
