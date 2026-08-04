@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "nestorvanz_portfolio",
   "type": "module",
   "version": "0.0.1",
   "engines": {
@@ -17,11 +17,13 @@
     "@types/react": "^19.2.16",
     "@types/react-dom": "^19.2.3",
     "astro": "^6.4.4",
+    "clsx": "^2.1.1",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "tailwindcss": "^4.3.0"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260617.1",
     "sass": "^1.100.0"
   }
 }

@@ -1,5 +1,6 @@
 import styles from "./Main.module.scss";
 import { useEffect, useState, type ReactNode } from "react";
+import clsx from "clsx";
 
 interface Props {
   children: ReactNode;
@@ -20,20 +21,18 @@ export function Main({ children }: Props) {
     };
   }, []);
 
-  // const className = [styles["main"], visible && styles["visible"]]
-  //   .filter(Boolean)
-  //   .join(" ");
-
-  const className = [
-    "box-border",
-    "duration-500",
-    "max-w-2xl",
-    "pt-10",
-    "mx-auto",
-    "transition-opacity",
-    "w-full",
-    visible ? "opacity-100" : "opacity-0",
-  ].join(" ");
+  const className = clsx(
+    // "box-border",
+    // "duration-500",
+    // "max-w-2xl",
+    // "pt-10",
+    // "pl-4",
+    // "pr-4",
+    // "mx-auto",
+    // "transition-opacity",
+    // "w-full",
+    // visible ? "opacity-100" : "opacity-0",
+  );
 
   return <main className={className}>{children}</main>;
 }
