@@ -15,8 +15,20 @@ export function Start() {
         </span>
       </Paragraph>
       <div className="start-links">
-        <LinkedInIcon size={32} />
-        <GitHubIcon size={32} />
+        <a
+          href="https://www.linkedin.com/in/nestorvanz/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <LinkedInIcon size={32} />
+        </a>
+        <a
+          href="https://github.com/nestorvanz/portfolio"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <GitHubIcon size={32} />
+        </a>
       </div>
     </View>
   );
