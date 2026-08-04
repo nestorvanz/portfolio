@@ -15,14 +15,18 @@ export function AI() {
         </Paragraph>
         <Section heading="Code Generation">
           <Paragraph>
-            Created custom implementations for Claude Code to improve agentic
-            code.
+            Powered accessible code generation at Meta using a routing-based
+            set of over 25 LLM rules, skills, and references for HTML and
+            Facebook AI code authoring, improving AI code generation for
+            Facebook web applications.
           </Paragraph>
         </Section>
         <Section heading="Code Migrations">
           <Paragraph>
-            Implemented code modernizations utilizing AI custom migrations for
-            Meta's JavaScript code base.
+            Spearheaded a large-scale Flow/JavaScript modernization at Meta
+            using AI-automated migrations for Meta's public-facing web
+            applications, optimizing the codebase for AI efficiency and
+            reducing token usage by up to 7% of the treated code.
           </Paragraph>
         </Section>
       </Article>

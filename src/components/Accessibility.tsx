@@ -7,22 +7,25 @@ export function Accessibility() {
   return (
     <View name="Accessibility">
       <Article heading="Accessibility" image="/img/ax.png">
-        <Section heading="Overview">
+        <Paragraph>
+          Specializing in digital accessibility at a global scale, building
+          WCAG-compliant, accessible-by-design enterprise applications across
+          Meta's web design systems.
+        </Paragraph>
+        <Section heading="Compliance">
           <Paragraph>
-            I've gone beyond coding with AI, but making customs implementation
-            to speed up development process and code maintainece.
+            Led the Design System's accessibility compliance project for
+            Facebook and Accounts Center web components, enabling Facebook's and
+            Accounts Center's web applications to be 100% compliant with
+            government regulations.
           </Paragraph>
         </Section>
-        <Section heading="Code Generation">
+        <Section heading="AI-Powered Authoring">
           <Paragraph>
-            Created custom implementations for Claude Code to improve agentic
-            code.
-          </Paragraph>
-        </Section>
-        <Section heading="Code Migrations">
-          <Paragraph>
-            Implemented code modernizations utilizing AI custom migrations for
-            Meta's JavaScript code base.
+            Powered accessible code generation using a routing-based set of over
+            25 LLM rules, skills, and references for HTML and Facebook AI code
+            authoring, improving AI code generation for Facebook web
+            applications.
           </Paragraph>
         </Section>
       </Article>
