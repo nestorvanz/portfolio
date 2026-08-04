@@ -1,4 +1,5 @@
 import { type ReactNode } from "react";
+import clsx from "clsx";
 
 interface Props {
   children: ReactNode;
@@ -6,9 +7,7 @@ interface Props {
 }
 
 export function ViewContent({ children, visible }: Props) {
-  const className = ["view-content", visible && "visible"]
-    .filter(Boolean)
-    .join(" ");
+  const className = clsx("view-content", visible && "visible");
 
   return <div className={className}>{children}</div>;
 }

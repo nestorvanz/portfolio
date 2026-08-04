@@ -3,28 +3,27 @@ import { Heading } from "./Heading";
 import { Section } from "./Section";
 import { Continue } from "./ui/Continue";
 import { View } from "./ui/View";
+import { Paragraph } from "./ui/Paragraph";
 
 export function AI() {
   return (
     <View name="AI">
       <Article heading="AI Implementations" image="/img/ai.png">
-        <Section heading="Overview">
-          <p>
-            I've gone beyond coding with AI, but making customs implementation
-            to speed up development process and code maintainece.
-          </p>
-        </Section>
+        <Paragraph>
+          I've gone beyond coding with AI, but making customs implementation to
+          speed up development process and code maintainece.
+        </Paragraph>
         <Section heading="Code Generation">
-          <p>
+          <Paragraph>
             Created custom implementations for Claude Code to improve agentic
             code.
-          </p>
+          </Paragraph>
         </Section>
         <Section heading="Code Migrations">
-          <p>
+          <Paragraph>
             Implemented code modernizations utilizing AI custom migrations for
             Meta's JavaScript code base.
-          </p>
+          </Paragraph>
         </Section>
       </Article>
     </View>

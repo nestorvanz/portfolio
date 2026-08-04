@@ -1,4 +1,5 @@
 import { type ReactNode } from "react";
+import clsx from "clsx";
 
 interface Props {
   children: ReactNode;
@@ -6,9 +7,7 @@ interface Props {
 }
 
 export function Paragraph({ align = "start", children }: Props) {
-  const className = ["paragraph", `text-align-${align}`]
-    .filter(Boolean)
-    .join(" ");
+  const className = clsx("paragraph", `text-align-${align}`);
 
   return <p className={className}>{children}</p>;
 }
